@@ -1,0 +1,198 @@
+// VARIABLES
+// Colores
+$cred: #EA5353
+$ccyan: #45D3D3
+$corange: #FCAF4A
+$cblue: #549EF2
+
+$cdarkblue: #4C4E61
+$cgrayblue: #A3A5AE
+$cvlgray: #fafafaf1
+
+// Font-family
+$ffam: 'Poppins', sans-serif
+
+// Media queries
+$layout-breakpoint-small: 576px
+$layout-breakpoint-medium: 768px
+$layout-breakpoint-large: 992px
+$layout-breakpoint-extralarge: 1200px
+// $layout-breakpoint-small
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: $ffam
+    font-size: 16px
+    .contenedor
+        width: 84%
+        height: 600px
+        margin: auto
+        padding: 30px 8% 30px 8%
+        
+        .top
+            margin: auto
+            width: 60%
+            height: 30%
+            color: $cdarkblue
+            text-align: center
+            @media (max-width: $layout-breakpoint-small)
+                width: 80%
+            .reliable
+                font-size: 1.5rem
+                font-weight: 300
+                color: $cgrayblue
+            .powerd
+                font-size: 1.5rem
+                font-weight: 700
+            .artificial
+                font-size: 0.8rem
+                font-weight: normal
+                color: $cgrayblue
+        .bottom
+            width: 100%
+            height: 70%
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            column-gap: 2%
+            grid-template-rows: repeat(4,1fr)
+            position: relative
+            .left
+                grid-column: 1 / 2
+                grid-row: 2 / 4
+                // border-top-color: $ccyan
+                // border-top-width: 1px
+                position: relative
+                padding: 12px
+                transition: all 0.5s ease
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    right: 0
+                    height: 4px
+                    top: 0
+                    background-color: $ccyan
+                &:hover
+                    background-color: $ccyan
+                    transition: all 0.5s ease
+                    transform: scale(1.5)
+                    z-index: 99
+                    h3
+                        color: $cvlgray
+                    p
+                        color: $cvlgray
+                    
+            .up
+                grid-column: 2 / 3
+                grid-row: 1/3
+                margin-bottom: 2.8%
+                // border-top-width: 4px
+                // border-top-color: $cred
+                position: relative
+                padding: 12px
+                transition: all 0.5s ease
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    right: 0
+                    height: 4px
+                    top: 0
+                    background-color: $cred
+                &:hover
+                    background-color: $cred
+                    transition: all 0.5s ease
+                    transform: scale(1.5)
+                    z-index: 99
+                    h3
+                        color: $cvlgray
+                    p
+                        color: $cvlgray
+
+
+            .down
+                grid-column: 2 / 3
+                grid-row: 3 / 5
+                margin-top: 2.8%
+                // border-top-width: 4px
+                // border-top-color: $corange
+                position: relative
+                padding: 12px
+                transition: all 0.5s ease
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    right: 0
+                    height: 4px
+                    top: 0
+                    background-color: $corange
+                &:hover
+                    background-color: $corange
+                    transition: all 0.5s ease
+                    transform: scale(1.5)
+                    z-index: 99
+                    h3
+                        color: $cvlgray
+                    p
+                        color: $cvlgray
+
+            .right
+                grid-column: 3/4
+                grid-row: 2/ 4
+                // border-top-width: 4px
+                // border-top-color: $cblue
+                position: relative
+                padding: 12px
+                transition: all 0.5s ease
+                &::before
+                    content: ""
+                    position: absolute
+                    left: 0
+                    right: 0
+                    height: 4px
+                    top: 0
+                    background-color: $cblue
+                &:hover
+                    background-color: $cblue
+                    transition: all 0.5s ease
+                    transform: scale(1.5)
+                    z-index: 99
+                    h3
+                        color: $cvlgray
+                    p
+                        color: $cvlgray
+
+
+.btn-item
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    // padding: 12px
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    
+.type
+    font-size: 0.8rem
+    h3
+        font-weight: 700
+        color: $cdarkblue
+    p
+        font-size: 0.8rem
+        font-weight: normal
+        color: $cgrayblue
+img
+    width: 50px
+    height: 50px
+    align-self: flex-end
+    margin: 6px
+    transition: all 0.5s ease
+    &:hover
+        transform: scale(1.3)        
+            
+    
+    
